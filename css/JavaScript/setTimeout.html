@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>setTimeout</title>
+    </head>
+    <body>
+        <input type="text" id="displayBox" name="displayBox" value="0">
+        <div id="content"></div>
+        <button type="button" onclick="countSecond()">开始计数</button>
+
+        <!--例子4-->
+        <button type="button" onclick="clearTimeout(stop)">停止计数</button>
+
+        <script>
+            // 例子1
+            setTimeout("alert('对不起, 要你久候')", 3000)
+
+
+
+            // 例子2
+            setTimeout("changeState()", 1000);
+            function changeState() {
+                let content = document.getElementById('content');
+                content.innerHTML = "<div style='color:red'>我是三秒后显示的内容！</div>";
+            }
+
+            // 例子3
+            x = 0
+            function countSecond()
+            {
+                x = x+1
+                document.getElementById("displayBox").value=x
+                stop = setTimeout("countSecond()", 1000)
+            }
+
+
+            // 例子5
+            setTimeout(demo5, 3000,"1232")
+            function demo5(msg) {
+                alert(msg)
+            }
+        </script>
+
+    </body>
+
+</html>

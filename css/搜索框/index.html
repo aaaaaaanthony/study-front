@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>搜索框</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+
+            *{
+                padding: 0;
+                margin: 0;
+            }
+
+            html,body{
+                height: 100%;
+                /*width: 100%;*/
+            }
+
+            .search-layout{
+                width: 200px;
+                height: 50px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                border-color: black;
+                border-width: 4px;
+                border-radius: 20px;
+                border-style: solid;
+                /*display: initial;*/
+            }
+
+            /*.search{*/
+            /*    padding: 10px 10px;*/
+            /*}*/
+
+            .search-input,.search-icon{
+                /*width: 100px;*/
+                display: initial;
+                /*float: left;*/
+                position: relative;
+            }
+
+
+            input{
+                outline-style: none ;
+                border: 0;
+                border-radius: 3px;
+                padding: 12px 0;
+                margin-top: 3px;
+                margin-left: 15px;
+                font-size: 15px;
+                font-family: "Microsoft soft",serif;
+                /*position: absolute;*/
+                /*left: 2px;*/
+                /*top: 2px;*/
+
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="search-layout">
+            <div class="search">
+                <div class="search-input">
+                        <input type="text" placeholder="输入框默认内容">
+                </div>
+                <div class="search-icon">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>评论</title>
+        <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <style>
+            .comment {
+                width: 800px;
+                height: 300px;
+                border-style:  solid;
+                border-color: gray;
+                border-radius: 5px;
+                border-width: 1px;
+
+                margin: auto auto;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="comment">
+            <tr>
+                <td>
+                    <div class="input-group">
+                        <span class="input-group-addon">昵称</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+
+                        <span class="input-group-addon" id="basic-addon2">邮箱</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+
+                        <span class="input-group-addon" id="basic-addon3">网址</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea class="form-control" rows="10"></textarea>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <div style="padding-left: 20px;padding-top: 5px">
+                        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                        </button>
+
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+                        </button>
+
+                        <div style="float: right;padding-right: 20px">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">登录</button>
+                                <button type="button" class="btn btn-default">提交</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </td>
+            </tr>
+        </div>
+
+    </body>
+</html>

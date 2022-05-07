@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+
+        <script>
+            // resolve函数作用是将Promise的状态从padding改变成fufilled
+            // reject 函数作用是将Promise的状态从padding改变成rejected
+            const promise = new Promise((resolve, reject) => {
+                let status = false;
+                if (status) {
+                    resolve('操作成功!');
+                } else {
+                    reject('操作失败!');
+                }
+                console.log('------')
+            });
+
+            promise.then(
+                // 第一个回调参数
+                res => {
+                    console.log('成功结果：' + res);
+                },
+                // 第二个回调参数
+                error => {
+                    console.log('失败结果：' + error);
+
+                }
+            );
+
+            //
+            // function loadImageAsync(url) {
+            //     return new Promise(function(resolve, reject) {
+            //         const image = new Image();
+            //
+            //         image.onload = function() {
+            //             resolve(image);
+            //         };
+            //
+            //         image.onerror = function() {
+            //             reject(new Error('Could not load image at ' + url));
+            //         };
+            //
+            //         image.src = url;
+            //         console.log(url)
+            //     });
+            // }
+            // loadImageAsync()
+        </script>
+
+    </body>
+</html>

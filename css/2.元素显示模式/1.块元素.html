@@ -1,0 +1,38 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>块元素</title>
+        <style>
+            #a {
+                background-color: skyblue;
+            }
+
+            #b {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+            }
+            #c {
+                background-color: pink;
+            }
+            .d{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="a">块状元素,比较霸道,独占一行</div>瑟瑟发抖
+        <div id="b">块状元素,可以更改宽高</div>瑟瑟发抖
+        <div id="c">块状元素,宽度默认是容器的100%</div>瑟瑟发抖
+        <div style="background-color: skyblue">
+            块状元素,里面可以放行内或者块元素
+            <div class="d">里块元素</div>
+            <span style="background-color: pink">行内元素1</span>
+            <span style="background-color: gray">行内元素2</span>
+        </div>
+    </body>
+
+</html>

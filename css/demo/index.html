@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+
+            *{
+                padding: 0;
+                margin: 0;
+            }
+
+            .header{
+                height: 50px;
+                background-color: black;
+                color: white;
+            }
+
+
+            .myflex{
+                display: flex;
+                justify-content: space-between;
+            }
+            .right{
+                /*float: right;*/
+            }
+
+
+            .title{
+                line-height: 50px;
+            }
+            .login{
+                display: initial;
+                line-height: 50px;
+            }
+
+            .content{
+                margin: auto;
+                width: 1000px;
+                height: 100%;
+            }
+
+            .main{
+                background-color: #d0d7de;
+                height: 100%;
+            }
+
+            .test{
+                height: 200px;
+                border-style: solid;
+                /*text-align: center;*/
+                /*line-height: 200px;*/
+                position: relative;
+
+            }
+
+            .test2{
+                height: 100px;
+                border-style: solid;
+                border-color: red;
+                width: 100px;
+                /*margin: auto;*/
+                line-height: 100px;
+                position: absolute;
+                left: 50%;
+                top: 25%
+            }
+
+        </style>
+    </head>
+    <body>
+      <div class="header">
+          <div class="content">
+              <div class="myflex">
+                  <div class="title">这是标题</div>
+                  <div class="right">
+                      <div class="login">登录</div>
+                      <div class="login">登录2</div>
+                      <div class="login">登录3</div>
+                  </div>
+              </div>
+
+
+          </div>
+      </div>
+      <div class="main">
+          <div class="content">
+              12312
+          </div>
+      </div>
+
+        <div  class="test">
+            <div class="test2">
+                fasfsdfsd
+            </div>
+
+        </div>
+    </body>
+</html>
