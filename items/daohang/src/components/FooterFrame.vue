@@ -1,7 +1,7 @@
 <template>
   <div id="back">
     <div style="text-align: center">
-      联系:mmzcg@look.com
+      联系:mmzcg@outlook.com
     </div>
   </div>
 </template>
