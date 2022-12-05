@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 例子一 */
+        p::before {
+            content: "《";
+            color: #000000;
+        }
+
+        p::after {
+            content: "》";
+            color: #000000;
+        }
+
+        p::before {
+            content: "《";
+            color: #000000;
+        }
+
+        p::after {
+            content: "》";
+            color: #000000;
+        }
+
+        a::before {
+            content: "请点击";
+        }
+
+        a::after {
+            content: attr(href);
+        }
+
+
+
+
+        /* 例子二 */
+        span::before {
+            content: "请输入";
+        }
+
+        span::after {
+            content: attr(id);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- content string属性 -->
+    <p>JavaScript高级程序设计</p>
+
+    <!-- content attr属性 -->
+    <a href="https://google.com">百度</a>
+    <br>
+
+    <!-- content attr和content连用 -->
+    <!-- input 不能添加伪元素 -->
+    <span id="span标签"><input type="text"></span>
+
+
+
+</body>
+
+</html>
