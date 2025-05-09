@@ -1,0 +1,7 @@
+{
+	"markdown.validate.enabled": true,
+	"markdown.validate.ignoredLinks": [
+		"../310/"
+	],
+	"workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+}
