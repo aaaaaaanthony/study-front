@@ -1,28 +1,29 @@
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>子代选择器</title>
-        <style>
-            ol div {
-                color: green;
-            }
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>子代选择器</title>
+	<style>
+		/* 后代选择器 */
+		ol div {
+			color: green;
+		}
 
-            ol > div {
-                color: red;
-            }
-        </style>
-    </head>
+		/* 子类选择器 */
+		ol>div {
+			color: red;
+		}
+	</style>
+</head>
 
-    <body>
-        <ol>
-            <li>我是ol的孩子</li>
-            <li>
-                <div>我是ol的孙子</div>
-            </li>
-            <div>我是ol的儿子</div>
-        </ol>
-    </body>
+<body>
+	<ol>
+		<li>
+			<div>我是ol的孙子,后代选择器</div>
+		</li>
+		<div>我是ol的儿子,子类选择器</div>
+	</ol>
+</body>
 
 </html>
