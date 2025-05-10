@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Padding 不会撑开盒子的情况</title>
+	<style>
+		.container {
+			height: 200px;
+			background-color: lightblue;
+			/* 如果盒子本身没有设置宽高,加padding不会撑开盒子大小 */
+			/* 加了padding也没有扩大盒子的宽度 */
+			padding: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		123
+	</div>
+</body>
+
+</html>
