@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/* 对于两个嵌套元素的块级元素,父元素有上外边距同时子元素也有上外边距,此时父元素会塌陷较大的外边距值 */
+		/* 解决办法 */
+		.father {
+			width: 400px;
+			height: 400px;
+			background-color: red;
+			margin-top: 50px;
+
+			/* 解决办法1: */
+			/* border: 1px solid transparent; */
+
+			/* 解决办法2: */
+			/* padding: 1px; */
+
+			/* 解决办法3: */
+			overflow: hidden;
+		}
+
+		.son {
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			margin-top: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+
+</body>
+
+</html>
